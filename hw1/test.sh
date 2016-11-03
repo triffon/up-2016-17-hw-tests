@@ -29,7 +29,7 @@ function run_tests()
     for ID in `seq 1 $MAX`
     do
 	log "Testing program $ID"
-	SRC="$TMPDIR/fn*_prob$ID_*.cpp"
+	SRC=`find "$TMPDIR" -name "fn*_prob$ID\_*.cpp" -print0`
 	EXE="$TMPDIR/prog$ID"
 	if [ -f "$SRC" ]
 	then
