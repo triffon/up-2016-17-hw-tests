@@ -29,7 +29,7 @@ int main() {
 
 	//the distance between the shot point and the darts' center
 	double Dist = sqrt((centerX - ShotPntX) * (centerX - ShotPntX) +
-					   (centerY - ShotPntY) * (centerY - ShotPntY));
+		           (centerY - ShotPntY) * (centerY - ShotPntY));
 
 	//too far away 
 	if (Dist - R1 > PRE) {
@@ -39,8 +39,8 @@ int main() {
 
 	//on boarder
 	if ((abs(Dist - R1) < (PRE / 10)) ||
-		(abs(Dist - R2) < (PRE / 10)) ||
-		(abs(Dist - R3) < (PRE / 10))) {
+	    (abs(Dist - R2) < (PRE / 10)) ||
+	    (abs(Dist - R3) < (PRE / 10))) {
 
 		std::cout << Outside << '\n';
 		return 0;
