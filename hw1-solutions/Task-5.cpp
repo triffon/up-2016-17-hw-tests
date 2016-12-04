@@ -38,9 +38,9 @@ int main() {
 	}
 
 	//on boarder
-	if ((abs(Dist - R1) < (PRE / 10)) ||
-	    (abs(Dist - R2) < (PRE / 10)) ||
-	    (abs(Dist - R3) < (PRE / 10))) {
+	if ((abs(Dist - R1) < PRE ) ||
+	    (abs(Dist - R2) < PRE ) ||
+	    (abs(Dist - R3) < PRE )) {
 
 		std::cout << Outside << '\n';
 		return 0;
