@@ -24,7 +24,7 @@ bool isPrime(unsigned x)
     }
 
     // after finishing the search without success
-    // we know the umber is prime
+    // we know the number is prime
     return true;
 }
 
