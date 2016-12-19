@@ -29,7 +29,7 @@ function run_tests()
 {
     TMPDIR="$BASEDIR"
  
-    CPPOPTS=
+    CPPOPTS=-std=c++11
 
     for ID in `seq 1 $MAX`
     do
@@ -39,7 +39,7 @@ function run_tests()
 	if [ -f "$SRC" ]
 	then
 	    # try to compile
-	    g++ -o "$EXE" $CPPOPTS "$SRC" 2>/dev/null
+	    $GCC -o "$EXE" $CPPOPTS "$SRC" 2>/dev/null
 	    if [ -x "$EXE" ]
 	    then
 		# start tests for this program one by one
