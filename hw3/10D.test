@@ -1,0 +1,6 @@
+H U Y J X
+D B P Z L
+T R W I Q
+A S N V O
+C M K E G
+Extracts characters from the stream and stores them in s as a c-string, until either (n-1) characters have been extracted or the delimiting character is encountered: the delimiting character being either the newline character ('\n') or delim (if this argument is specified). The delimiting character is not extracted from the input sequence if found, and remains there as the next character to be extracted from the stream (see getline for an alternative that does discard the delimiting character). A null character ('\0') is automatically appended to the written sequence if n is greater than zero, even if an empty string is extracted.
