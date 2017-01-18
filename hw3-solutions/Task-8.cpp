@@ -50,7 +50,6 @@ void sortArray(int* data, unsigned size)
             if ((data[i] % 3 + 3) % 3 == mod)
                 tmpData[pos++] = data[i];
     }
-    cout << pos << endl;
     for (unsigned i = 0; i < size; ++i)
         data[i] = tmpData[i];
 
@@ -61,7 +60,7 @@ int main()
 {
     unsigned n;
     cin >> n;
-    if (n == 0 || n > 100000)
+    if (n == 0 || n > MaxSize)
     {
         cerr << "Bad input size" << endl;
         return 1;
