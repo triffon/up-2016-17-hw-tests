@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int MaxTextLength = 10000;
+const int MaxTextLength = 10001;
 
 bool isLetter(const char* symbol, bool detectDash = false)
 {
