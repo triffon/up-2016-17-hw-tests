@@ -150,9 +150,9 @@ int main()
     char sub = find_sub(letters);
     char not_in_table = find_not_in_table(letters);
     char buffer[201];
-    cin.get(buffer, 201);
+    cin.getline(buffer, 201);
     while (true){
-      cin.getline(buffer, 201);
+      cin.get(buffer, 201);
       int len = strlen(buffer);
       transform(buffer, sub, not_in_table);
       encode(buffer, letters, sub);
