@@ -1,0 +1,2 @@
+500
+Read a lot of differences between pointers & references. Here is a brief description of what i learned. 1. Memory is allocated when a pointer is defined. A reference however, is a name alias & hence no memory is allocated for it(Is it correct?). 2. Reference is bound to be initialized at the time of definition because, a reference is implemented with a constant pointer & hence cannot be made to point to the other object. A pointer however, is not necessary to be initialized at the time of defini
